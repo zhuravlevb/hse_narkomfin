@@ -177,7 +177,7 @@ nav.menubar {
     justify-content: space-between;
 }
 
-nav.menubar > img {
+nav.menubar img {
     width: 200px;
     margin: 0;
 }
@@ -192,4 +192,90 @@ nav.menubar a {
 
 nav.menubar a:hover {
     color: #333;
+}
+
+/* about page styles */
+#about {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#aboutparent::after {
+    content: "";
+    /* background: url("../images/1440.png"); */
+    width: 1440px;
+    height: 3120px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 720px);
+    opacity: 0.2;
+}
+
+#about section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about section img {
+    width: auto;
+    margin: 0;
+}
+
+#about h2,
+#about p {
+    width: 100%;
+}
+
+#about h2 {
+    font-size: 38px;
+    line-height: 46px;
+    margin: 0;
+}
+
+#about p {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 24px 0;
+}
+
+#about section div {
+    width: 48%;
+}
+
+#first {
+    margin-top: 96px;
+}
+
+#first img {
+    width: 1100px;
+}
+
+#first div:nth-of-type(1),
+#third div:nth-of-type(1) {
+    padding: 40px 0 0 110px;
+}
+
+#second img {
+    width: 650px;
+}
+
+#about #second {
+    margin-top: 110px;
+}
+
+#second div:nth-of-type(2) {
+    padding: 50px 20px 0 10px;
+}
+
+#about #third {
+    margin-top: 190px;
+    border-bottom: 1px solid #ccc;
+}
+
+#third img {
+    width: 1050px;
+    margin: 10px 0 0 10px;
+    border-left: 1px solid #ccc;
 }
